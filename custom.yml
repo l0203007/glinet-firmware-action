@@ -6,7 +6,9 @@ feeds:
     branch: master
 packages:
   - luci-app-mwan3
-
+python3 setup.py -c  configs/config-mt798x-7.6.6.1.yml
+cd mt7981
+./scripts/gen_config.py target_mt7981_gl-mt2500 glinet_depends glinet_nas  istore
 
 
 diffconfig: |
